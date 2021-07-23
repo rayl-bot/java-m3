@@ -51,5 +51,13 @@ public class Rueda extends Coche {
 	public void setDiametro(double diametro) {
 		this.diametro = diametro;
 	}
+	
+	public double comprobarDiametro(double diametro) {
+		if(diametro>=0.4 || diametro<=4)
+			return diametro;
+		else
+			System.out.println("El diametro es incorrento, se podra 0.");
+			return 0;
+	}
 
 }
