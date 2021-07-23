@@ -49,7 +49,11 @@ public class Bike extends Vehicle {
 	public void setTrasera(Rueda trasera) {
 		this.trasera = trasera;
 	}
-
+	
+	@Override
+	public String toString() {
+		return "Moto [marca=" + marca + ", color=" + color + ", matricula=" + matricula + "]";
+	}
 
 	//metodo abstracto heredado de la clase Vehicle
 	@Override

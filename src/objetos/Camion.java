@@ -47,6 +47,11 @@ public class Camion extends Vehicle {
 	public void setTraseras(Rueda traseras) {
 		this.traseras = traseras;
 	}
+	
+	@Override
+	public String toString() {
+		return "Camion [marca=" + marca + ", color=" + color + ", matricula=" + matricula + "]";
+	}
 
 	@Override
 	public String controlarMatricula(String matricula) {

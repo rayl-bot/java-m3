@@ -28,6 +28,12 @@ public class Titular extends Persona {
 		this.nombreCompleto = nombreCompleto;
 		this.dateCaducidad = dateCaducidad;
 	}
+	
+	@Override
+	public String toString() {
+		return "Titular [nombre=" + nombre + ", apellidos=" + apellidos + ", dateNaciemiento=" + dateNaciemiento
+				+ ", licencia=" + licencia + "]";
+	}
 
 	/**
 	 * @return the iD

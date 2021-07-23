@@ -27,6 +27,12 @@ public class Conductor extends Persona {
 		this.dateCaducidad = dateCaducidad;
 	}
 
+	@Override
+	public String toString() {
+		return "Conductor [nombre=" + nombre + ", apellidos=" + apellidos + ", dateNaciemiento=" + dateNaciemiento
+				+ ", licencia=" + licencia + "]";
+	}
+	
 	/**
 	 * @return the iD
 	 */

@@ -1,6 +1,7 @@
 package objetos;
 
-import herency.Vehicle;
+import herency.*;
+import java.util.*;
 
 public class Coche extends Vehicle{
 
@@ -9,6 +10,7 @@ public class Coche extends Vehicle{
 	 */
 	protected Rueda delanteras;
 	protected Rueda traseras;
+	protected ArrayList<Persona> arrayPersonas = new ArrayList();
 
 	/**
 	 * @param marca
@@ -51,7 +53,16 @@ public class Coche extends Vehicle{
 		this.traseras = traseras;
 	}
 	
-	
+	public void addPersona(Persona persona) {
+		this.arrayPersonas.add(persona);
+		System.out.println("--Persona introducida--");
+	}
+
+	@Override
+	public String toString() {
+		return "Coche [marca=" + marca + ", color=" + color + ", matricula=" + matricula + "]";
+	}
+
 	//metodo abstracto heredado de la clase Vehicle
 	public String controlarMatricula(String matricula) {
 
