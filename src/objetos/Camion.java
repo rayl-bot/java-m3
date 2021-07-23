@@ -2,11 +2,8 @@ package objetos;
 
 import herency.Vehicle;
 
-public class Coche extends Vehicle{
+public class Camion extends Vehicle {
 
-	/***
-	 * Creacion de las variables del coche
-	 */
 	protected Rueda delanteras;
 	protected Rueda traseras;
 
@@ -17,7 +14,7 @@ public class Coche extends Vehicle{
 	 * @param delanteras
 	 * @param traseras
 	 */
-	public Coche(String marca, String color, String matricula, Rueda delanteras, Rueda traseras) {
+	public Camion(String marca, String color, String matricula, Rueda delanteras, Rueda traseras) {
 		super(marca, color, matricula);
 		this.delanteras = delanteras;
 		this.traseras = traseras;
@@ -50,10 +47,10 @@ public class Coche extends Vehicle{
 	public void setTraseras(Rueda traseras) {
 		this.traseras = traseras;
 	}
-	
-	
-	//metodo abstracto heredado de la clase Vehicle
+
+	@Override
 	public String controlarMatricula(String matricula) {
+		// TODO Auto-generated method stub
 
 		if (matricula.toUpperCase().matches("^[0-9]{4}[A-Z]{3}$")) {
 			System.out.println("Matrícula válida");
